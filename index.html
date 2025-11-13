@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - [Your Company Name]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Service Section Styles */
+        .service-section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .section-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+
+        /* Service Grid */
+        .service-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-card h3 .icon {
+            margin-right: 0.5rem;
+        }
+
+        .service-list {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        .service-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-list li:before {
+            content: "✓";
+            color: #27ae60;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* CTA Buttons */
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #c0392b;
+        }
+
+        .quote-button {
+            background: #27ae60;
+        }
+
+        .quote-button:hover {
+            background: #219a52;
+        }
+
+        /* Warning Section */
+        .warning-section {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 4px solid #f39c12;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .warning-title {
+            color: #e67e22;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Guidelines Section */
+        .guidelines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .guideline-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .guideline-item .icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .contact-section a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            
+            .service-section {
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>[Your Company Name] Services</h1>
+                <p>Reliable Waste & Recycling Solutions</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="service-section">
+            <div class="section-header">
+                <span class="section-icon">🏠</span>
+                <h2 class="section-title">Residential Collection</h2>
+            </div>
+            <p>We offer comprehensive curbside collection services to keep your home clean and your neighborhood beautiful.</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><span class="icon">🗑️</span> Standard Trash Pickup</h3>
+                    <ul class="service-list">
+                        <li><strong>Bin Sizes:</strong> Standard 95-gallon rollout carts</li>
+                        <li><strong>Frequency:</strong> Weekly pickup on your designated day</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><span class="icon">♻️</span> Recycling Services</h3>
+                    <ul class="service-list">
+                        <li><strong>Accepted:</strong> Cardboard, paper, aluminum cans, plastics #1, #2, & #5</li>
+                        <li><strong>Single-Stream:</strong> No sorting required</li>
+                        <li><strong>Please Rinse</strong> all containers</li>
+                        <li><strong>No Plastic Bags</strong> in recycling</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3><span class="icon">🍂</span> Yard Waste Collection</h3>
+                    <ul class="service-list">
+                        <li><strong>Season:</strong> March through November</li>
+                        <li><strong>Accepted:</strong> Grass, leaves, small branches, garden waste</li>
+                        <li>Use <strong>biodegradable paper bags</strong> only</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="section-header">
+                <span class="section-icon">🏢</span>
+                <h2 class="section-title">Commercial Collection</h2>
+            </div>
+            <p>We tailor our services to meet the unique needs of businesses, restaurants, offices, and apartment complexes.</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><span class="icon">⚙️</span> Custom Solutions</h3>
+                    <ul class="service-list">
+                        <li>Flexible container sizes (2yd, 4yd, 6yd)</li>
+                        <li>Daily to weekly pickup schedules</li>
+                        <li>Commercial recycling programs available</li>
+                    </ul>
+                    <a href="#" class="cta-button quote-button">Contact Us for a Free Commercial Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="section-header">
+                <span class="section-icon">⭐</span>
+                <h2 class="section-title">Specialty Services</h2>
+            </div>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><span class="icon">🛋️</span> Bulk & Junk Pickup</h3>
+                    <p><strong>Accepted Items:</strong> Furniture, mattresses, appliances (freon removed)</p>
+                    <p><strong>Schedule:</strong> Call or schedule online 24 hours in advance</p>
+                    <a href="#" class="cta-button">Schedule Pickup</a>
+                </div>
+                
+                <div class="service-card">
+                    <h3><span class="icon">🚛</span> Roll-Off Dumpster Rental</h3>
+                    <p><strong>Perfect for:</strong> Renovations, construction, major cleanouts</p>
+                    <p><strong>Sizes:</strong> 10, 20, and 30-yard containers</p>
+                    <a href="#" class="cta-button quote-button">Get an Instant Quote</a>
+                </div>
+            </div>
+            
+            <div class="warning-section">
+                <div class="warning-title">☣️ Hazardous Waste</div>
+                <p>We <strong>cannot accept</strong> hazardous waste in our regular collection services.</p>
+                <p><strong>What We Don't Accept:</strong> Paint, chemicals, batteries, motor oil, pesticides, fluorescent bulbs, medical sharps.</p>
+                <p><strong>Proper Disposal:</strong> Please use the designated <a href="#">[Your County/City] Hazardous Waste Facility</a>.</p>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="section-header">
+                <span class="section-icon">📋</span>
+                <h2 class="section-title">Pickup Guidelines & Policies</h2>
+            </div>
+            
+            <div class="guidelines-grid">
+                <div class="guideline-item">
+                    <span class="icon">🕖</span>
+                    <h4>Pickup Times</h4>
+                    <p>Have bins out by <strong>7:00 AM</strong> on collection day</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <span class="icon">📍</span>
+                    <h4>Bin Placement</h4>
+                    <p>Within 3 feet of curb, arrows facing street</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <span class="icon">❌</span>
+                    <h4>Holiday Schedule</h4>
+                    <p>No service on major holidays - check schedule</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <span class="icon">⚠️</span>
+                    <h4>Weight Limits</h4>
+                    <p>Carts must not exceed <strong>50 pounds</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Have a question we didn't answer?</h2>
+            <p>Visit our FAQ page or contact our friendly customer service team:</p>
+            <p><strong>Phone:</strong> [Phone Number] | <strong>Email:</strong> [Email Address]</p>
+        </section>
+    </main>
+</body>
+</html>
